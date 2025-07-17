@@ -6,8 +6,8 @@
     <title>Working With Me | Christofer Holland</title>
     <meta property="og:title" content="Working With Me - Christofer Holland Real Estate Services">
     <meta property="og:description" content="Learn how I work with clients to find their perfect home in NYC. Clear process, authentic approach, and dedicated service.">
-    <meta property="og:image" content="https://client.christoferholland.com/images/chocg.png">
-    <meta property="og:url" content="https://client.christoferholland.com">
+    <meta property="og:image" content="https://clientschristoferholland.netlify.app/images/chocg.png">
+    <meta property="og:url" content="https://clientschristoferholland.netlify.app">
     <meta property="og:type" content="website">
     <link rel="icon" href="images/chfavicon.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -259,9 +259,9 @@
         /* Info Cards */
         .info-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin: 50px 0;
+            margin: 50px 0 30px 0;
         }
 
         .info-card {
@@ -295,6 +295,54 @@
             font-size: 1rem;
             line-height: 1.6;
             opacity: 0.9;
+            text-align: center;
+        }
+
+        /* Featured Section */
+        .featured-section {
+            max-width: 600px;
+            margin: 80px auto 0 auto;
+            padding: 40px;
+            background: rgba(102, 126, 234, 0.08);
+            border-radius: 25px;
+            border: 2px solid #667eea;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .featured-section:hover {
+            background: rgba(102, 126, 234, 0.12);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .featured-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .featured-section h3 i {
+            font-size: 1.3rem;
+        }
+
+        .featured-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        /* Important highlight styling */
+        .important-highlight {
+            color: #667eea;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
         }
 
         /* Key Points */
@@ -412,6 +460,11 @@
                 flex-direction: column;
                 text-align: center;
                 gap: 20px;
+                align-items: center;
+            }
+
+            .step-number {
+                margin-bottom: 10px;
             }
 
             .contact-info {
@@ -494,8 +547,14 @@
             </div>
             <div class="info-card">
                 <h3><i class="fas fa-shield-alt"></i> Buyer Representation</h3>
-                <p>When you're serious about purchasing, we'll move into a formal <em>Buyer Representation Agreement</em>. This exclusive contract ensures I can fully advocate for you and negotiate on your behalf.</p>
+                <p>When you're serious about purchasing, we'll move into a formal <em>Buyer Representation Agreement</em>. This contract ensures I can fully advocate for you and negotiate on your behalf.</p>
             </div>
+        </div>
+        
+        <!-- Featured Being Prepared Section -->
+        <div class="featured-section">
+            <h3><i class="fas fa-star"></i> Being Prepared</h3>
+            <p><strong style="color: #667eea;">IMPORTANT:</strong> Clients with pre-approval letters and financial statements are prioritized by sellers. This preparation shows you're qualified, serious, and ready to move quickly when the right property appears.</p>
         </div>
     </section>
 
@@ -506,7 +565,7 @@
             <ul>
                 <li>
                     <i class="fas fa-star"></i>
-                    <span><strong>100% Commission Structure:</strong> My time and energy go toward serious buyers ready to engage in the process. I'm selective for your benefit as much as mine.</span>
+                    <span><strong>100% Commission Structure:</strong> My time and energy go toward serious buyers who are ready with financial statements, pre-approval letters, and a buyer representation agreement.</span>
                 </li>
                 <li>
                     <i class="fas fa-clock"></i>
@@ -555,7 +614,7 @@
                 <div class="step-number">4</div>
                 <div class="step-content">
                     <h3>Full-Service Search Strategy</h3>
-                    <p>I'll build a personalized search plan and prioritize you for faster showings, private tours, and getting you in the door before the crowd. Plus access to my market insight, micro-trends, and off-market opportunities you can't find on Zillow.</p>
+                    <p>I'll build a personalized search plan based on your criteria and move quickly on listings. We'll tour properties strategically and efficiently, and I'll prioritize you for faster showings and scheduling.</p>
                 </div>
             </div>
 
@@ -578,15 +637,29 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
+                    <a href="mailto:c.holland@hlresidential.com">c.holland@hlresidential.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
                     <a href="mailto:christofer@christoferholland.com">christofer@christoferholland.com</a>
                 </div>
+            </div>
+            
+            <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
-                    <a href="tel:9172071414">917.207.1414</a>
+                    <span>Work: <a href="tel:9294420976">929.442.0976</a></span>
                 </div>
                 <div class="contact-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Personal: <a href="tel:9172071414">917.207.1414</a></span>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
                     <i class="fas fa-globe"></i>
-                    <a href="https://christoferholland.com" target="_blank">christoferholland.com</a>
+                    <a href="https://christoferholland.com" target="_blank">www.christoferholland.com</a>
                 </div>
             </div>
 

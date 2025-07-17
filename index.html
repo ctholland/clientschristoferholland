@@ -259,9 +259,9 @@
         /* Info Cards */
         .info-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin: 50px 0;
+            margin: 50px 0 30px 0;
         }
 
         .info-card {
@@ -295,6 +295,54 @@
             font-size: 1rem;
             line-height: 1.6;
             opacity: 0.9;
+            text-align: center;
+        }
+
+        /* Featured Section */
+        .featured-section {
+            max-width: 600px;
+            margin: 80px auto 0 auto;
+            padding: 40px;
+            background: rgba(102, 126, 234, 0.08);
+            border-radius: 25px;
+            border: 2px solid #667eea;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .featured-section:hover {
+            background: rgba(102, 126, 234, 0.12);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .featured-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .featured-section h3 i {
+            font-size: 1.3rem;
+        }
+
+        .featured-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        /* Important highlight styling */
+        .important-highlight {
+            color: #667eea;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
         }
 
         /* Key Points */
@@ -502,6 +550,12 @@
                 <p>When you're serious about purchasing, we'll move into a formal <em>Buyer Representation Agreement</em>. This contract ensures I can fully advocate for you and negotiate on your behalf.</p>
             </div>
         </div>
+        
+        <!-- Featured Being Prepared Section -->
+        <div class="featured-section">
+            <h3><i class="fas fa-star"></i> Being Prepared</h3>
+            <p><strong style="color: #667eea;">IMPORTANT:</strong> Clients with pre-approval letters and financial statements are prioritized by sellers. This preparation shows you're qualified, serious, and ready to move quickly when the right property appears.</p>
+        </div>
     </section>
 
     <!-- Key Points -->
@@ -511,7 +565,7 @@
             <ul>
                 <li>
                     <i class="fas fa-star"></i>
-                    <span><strong>100% Commission Structure:</strong> My time and energy go toward serious buyers ready to engage in the process. I'm selective for your benefit as much as mine.</span>
+                    <span><strong>100% Commission Structure:</strong> My time and energy go toward serious buyers who are ready with financial statements, pre-approval letters, and a buyer representation agreement.</span>
                 </li>
                 <li>
                     <i class="fas fa-clock"></i>
